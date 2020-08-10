@@ -1,4 +1,5 @@
 import requests
+import os
 import vk_api
 def fastban():
     os.system("clear")
