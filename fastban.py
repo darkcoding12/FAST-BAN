@@ -1,6 +1,7 @@
 import requests
 import vk_api
 def fastban():
+    os.system("clear")
     intro = """                           
     ████████        ██████      ██     ▐▐     ▐▐
     ██              ██   ██   ██  ██   ▐▐▐▐   ▐▐
