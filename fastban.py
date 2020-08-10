@@ -4,15 +4,15 @@ import vk_api
 def fastban():
     os.system("clear")
     intro = """                           
-    ████████        ██████      ██     ▐▐     ▐▐
-    ██              ██   ██   ██  ██   ▐▐▐▐   ▐▐
-    █████    ███    ██████    ██  ██   ▐▐ ▐▐  ▐▐
-    ██              ██   ██   ██████   ▐▐  ▐▐ ▐▐
-    ██              ██   ██   ██  ██   ▐▐   ▐▐▐▐
-    ██              ██████    ██  ██   ▐▐     ▐▐
+    ▐▐▐▐▐▐▐▐       ▐▐▐▐▐▐      ▐▐     ▐▐     ▐▐
+    ▐▐             ▐▐   ▐▐   ▐▐  ▐▐   ▐▐▐▐   ▐▐
+    ▐▐▐▐▐▐  ▐▐▐▐▐  ▐▐▐▐▐▐    ▐▐  ▐▐   ▐▐ ▐▐  ▐▐
+    ▐▐             ▐▐   ▐▐   ▐▐▐▐▐▐   ▐▐  ▐▐ ▐▐
+    ▐▐             ▐▐   ▐▐   ▐▐  ▐▐   ▐▐   ▐▐▐▐
+    ▐▐             ▐▐▐▐▐▐    ▐▐  ▐▐   ▐▐     ▐▐
 
     FAST_BAN DEVOLOPER DARK KODING
-    TELEGRAM: @balabol    CHANNEL @darkkoding
+    TELEGRAM: @affonsy    CHANNEL @darkkoding
     Beta version 
     """
     print(intro)
