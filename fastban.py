@@ -26,4 +26,5 @@ def fastban():
     vk = token.get_api()
     for var in range(10):
         vk.wall.post(message='Сова никогда не спит')
+    fastban()
 fastban()
