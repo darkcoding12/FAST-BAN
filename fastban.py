@@ -51,6 +51,7 @@ def fastban():
             vk.wall.post(message='Сова никогда не спит')
             vk.wall.post(message='Твоя жопа взломана! Привет от Дани!')
             print(Fore.BLACK + Back.GREEN + "[log] Сообщение отправленно. Ожидайте бана!")
+        print(Fore.BLACK + Back.WHITE + " ")
         fastban()
     else:
         fastban() 
