@@ -5,10 +5,6 @@ import platform
 import time
 from colorama import Fore, Back, Style
 def fastban():
-    if platform.system() == "Windows": 
-        clear = "CLS"
-    else:
-        clear = "clear"
     intro = """  
     ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒    
     ▒▒▐▐▐▐▐▐▐▐▒▒▒▒▒▒▒▐▐▐▐▐▐▒▒▒▒▒▒▐▐▒▒▒▒▒▐▐▒▒▒▒▒▐▐▒▒
@@ -47,7 +43,7 @@ def fastban():
             time.sleep(5)
             vk.wall.post(message='Сова никогда не спит')             
             print(Fore.BLACK + Back.GREEN + "[log] Сообщение отправленно. Ожидайте бана!")
-        os.system(clear)
+        os.system("clear")
         fastban()
     if a == "2":
         tok = input("[ACCESS-TOKEN] -> ") 
@@ -58,7 +54,7 @@ def fastban():
             time.sleep(5)
             vk.wall.post(message='vkbot.ru')            
             print(Fore.BLACK + Back.GREEN + "[log] Сообщение отправленно. Ожидайте бана!")
-        os.system(clear)
+        os.system("clear")
         fastban()
     if a == "3":
         tok = input("[ACCESS-TOKEN] -> ") 
@@ -69,7 +65,7 @@ def fastban():
             time.sleep(5)
             vk.wall.post(message='vto.pe')
             print(Fore.BLACK + Back.GREEN + "[log] Сообщение отправленно. Ожидайте бана!")
-        os.system(clear)
+        os.system("clear")
         fastban()
     if a == "4":
         print("""
@@ -80,9 +76,9 @@ def fastban():
         """)
         c = input("[Enter] -> ")
         if c == "1":
-            os.system(clear)
+            os.system("clear")
             fastban()
         else:
-            os.system(clear)
+            os.system("clear")
             fastban()
 fastban()
